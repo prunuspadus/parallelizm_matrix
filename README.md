@@ -56,5 +56,8 @@ print(res)
 
 1. Модифицируйте программу таким образом, чтобы она сама определяла количество необходимых параллельных потоков.
 1. Модифицируйте программу таким образом, чтобы одна часть программы генерировала случайные квадратные матрицы заданной размерности, а другая - перемножала их по мере генерации. Протестируйте асинхронность работы программы. Реализуйте механизм остановки процесса перемножения.
-/Users/admin/Desktop/Финашка/ССиП/матрицы/Снимок экрана 2024-04-25 в 19.06.56.png
-/Users/admin/Desktop/Финашка/ССиП/матрицы/Снимок экрана 2024-04-25 в 19.06.18.png
+
+### Вывод программы
+![from file](https://sun9-48.userapi.com/impg/uI9_VjaCiCiRUlwjVxpf-lX8voFT6kIDizvFSQ/flyerqjhB-w.jpg?size=854x419&quality=96&sign=d4771206006f4bddef3f583894a32384&type=album)
+
+![generated](https://sun9-80.userapi.com/impg/3mgKHUTZYqtd8CKFtqb2cAsO0uwjTZFV28N1RQ/MR6qS9KfSCw.jpg?size=861x529&quality=96&sign=9cfbc6b04103d1b1b0054b998d942ce5&type=album)
