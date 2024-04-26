@@ -8,7 +8,7 @@ MATRIX2_FILE = "/Users/admin/Desktop/Финашка/ССиП/матрицы/matr
 RESULT_FILE = "/Users/admin/Desktop/Финашка/ССиП/матрицы/result.yml"
 
 
-def print_matrix(matrix: List[List[int]]): #-> None:
+def print_matrix(matrix: List[List[int]]):
     """Вывод матрицы на экран"""
     r = "\n" + "\n".join(["\t".join([str(cell) for cell in row]) for row in matrix])
     print(r)
@@ -26,7 +26,7 @@ def matrix_writer(matrix: List[List[int]], file_name: str) -> None:
         yaml.safe_dump(matrix, file)
 
 
-def matrix_gen(n: int, m: int): #-> List[List[int]]:
+def matrix_gen(n: int, m: int):
     """Генерация матрицы"""
     matrix = []
     for i in range(n):
@@ -36,7 +36,7 @@ def matrix_gen(n: int, m: int): #-> List[List[int]]:
     return matrix
 
 
-def worker(i: int, j: int, A: list, B: list, que: mp.Queue): #-> None:
+def worker(i: int, j: int, A: list, B: list, que: mp.Queue):
     """
     Обработчик перемножения элементов матрицы
     Запускается в отдельном процессе
@@ -109,16 +109,8 @@ def main():
 
     for i in range(len(matrix_result)):
         for j in range(len(matrix_result[i])):
-            p = mp.Process(
-                target=worker,
-                args=(
-                    i,
-                    j,
-                    matrix1,
-                    matrix2,
-                    que,
-                ),
-            )
+            p = mp.Process(target=worker,
+                            args=(i, j,matrix1,matrix2,que))
             processes_list.append(p)
 
     for p in processes_list:
